@@ -16,9 +16,14 @@
 
 package com.android.browser.view;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.content.Context;
 import android.database.DataSetObserver;
-import android.provider.BrowserContract;
 import android.util.AttributeSet;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -35,13 +40,8 @@ import android.widget.TextView;
 import com.android.browser.BreadCrumbView;
 import com.android.browser.BrowserBookmarksAdapter;
 import com.android.browser.R;
+import com.android.browser.provider.BrowserContract;
 import com.android.internal.view.menu.MenuBuilder;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class BookmarkExpandableView extends ExpandableListView
         implements BreadCrumbView.Controller {

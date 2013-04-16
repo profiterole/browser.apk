@@ -106,7 +106,7 @@ public class ScrollerView extends FrameLayout {
      * When set to true, the scroll view measure its child to make it fill the currently
      * visible area.
      */
-    @ViewDebug.ExportedProperty(category = "layout")
+/*    @ViewDebug.ExportedProperty(category = "layout") */
     private boolean mFillViewport;
 
     /**

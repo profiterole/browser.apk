@@ -49,8 +49,8 @@ import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.preference.PreferenceActivity;
 import android.provider.Browser;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.Images;
+import com.android.browser.provider.BrowserContract;
+import com.android.browser.provider.BrowserContract.Images;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Intents.Insert;
 import android.speech.RecognizerIntent;
@@ -375,23 +375,23 @@ public class Controller
 
         @Override
         public void run() {
-            ContentResolver cr = mContext.getContentResolver();
-            if (mIds == null || mIds.size() == 0) {
-                cr.delete(Thumbnails.CONTENT_URI, null, null);
-            } else {
-                int length = mIds.size();
-                StringBuilder where = new StringBuilder();
-                where.append(Thumbnails._ID);
-                where.append(" not in (");
-                for (int i = 0; i < length; i++) {
-                    where.append(mIds.get(i));
-                    if (i < (length - 1)) {
-                        where.append(",");
-                    }
-                }
-                where.append(")");
-                cr.delete(Thumbnails.CONTENT_URI, where.toString(), null);
-            }
+//            ContentResolver cr = mContext.getContentResolver();
+//            if (mIds == null || mIds.size() == 0) {
+//                cr.delete(Thumbnails.CONTENT_URI, null, null);
+//            } else {
+//                int length = mIds.size();
+//                StringBuilder where = new StringBuilder();
+//                where.append(Thumbnails._ID);
+//                where.append(" not in (");
+//                for (int i = 0; i < length; i++) {
+//                    where.append(mIds.get(i));
+//                    if (i < (length - 1)) {
+//                        where.append(",");
+//                    }
+//                }
+//                where.append(")");
+//                cr.delete(Thumbnails.CONTENT_URI, where.toString(), null);
+//            }
         }
 
     }

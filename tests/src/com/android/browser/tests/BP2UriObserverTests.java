@@ -22,8 +22,8 @@ import android.content.ContentValues;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.net.Uri;
-import android.provider.BrowserContract.Bookmarks;
-import android.provider.BrowserContract.History;
+import com.android.browser.provider.BrowserContract.Bookmarks;
+import com.android.browser.provider.BrowserContract.History;
 import android.test.suitebuilder.annotation.SmallTest;
 
 import java.io.ByteArrayOutputStream;

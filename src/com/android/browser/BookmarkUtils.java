@@ -38,7 +38,9 @@ import android.graphics.drawable.PaintDrawable;
 import android.net.Uri;
 import android.os.Message;
 import android.provider.Browser;
-import android.provider.BrowserContract;
+
+import com.android.browser.provider.BrowserContract;
+
 
 public class BookmarkUtils {
     private final static String LOGTAG = "BookmarkUtils";

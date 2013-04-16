@@ -16,6 +16,12 @@
 
 package com.android.browser.widget;
 
+import java.io.File;
+import java.io.FilenameFilter;
+import java.util.HashSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import android.appwidget.AppWidgetManager;
 import android.content.ContentUris;
 import android.content.Context;
@@ -29,8 +35,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.BitmapFactory.Options;
 import android.net.Uri;
 import android.os.Binder;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.Bookmarks;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.RemoteViews;
@@ -38,13 +42,9 @@ import android.widget.RemoteViewsService;
 
 import com.android.browser.BrowserActivity;
 import com.android.browser.R;
+import com.android.browser.provider.BrowserContract;
+import com.android.browser.provider.BrowserContract.Bookmarks;
 import com.android.browser.provider.BrowserProvider2;
-
-import java.io.File;
-import java.io.FilenameFilter;
-import java.util.HashSet;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class BookmarkThumbnailWidgetService extends RemoteViewsService {
 

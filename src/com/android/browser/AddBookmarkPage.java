@@ -18,6 +18,8 @@ package com.android.browser;
 
 import com.android.browser.addbookmark.FolderSpinner;
 import com.android.browser.addbookmark.FolderSpinnerAdapter;
+import com.android.browser.provider.BrowserContract;
+import com.android.browser.provider.BrowserContract.Accounts;
 
 import android.app.Activity;
 import android.app.LoaderManager;
@@ -40,8 +42,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.Accounts;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.KeyEvent;

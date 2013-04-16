@@ -27,8 +27,8 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.History;
+import com.android.browser.provider.BrowserContract;
+import com.android.browser.provider.BrowserContract.History;
 import android.util.Log;
 
 import com.android.browser.provider.BrowserProvider2.Thumbnails;

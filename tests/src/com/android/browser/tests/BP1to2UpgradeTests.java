@@ -27,10 +27,10 @@ import android.graphics.Bitmap.Config;
 import android.net.Uri;
 import android.provider.Browser;
 import android.provider.Browser.BookmarkColumns;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.Bookmarks;
-import android.provider.BrowserContract.History;
-import android.provider.BrowserContract.Images;
+import com.android.provider.BrowserContract;
+import com.android.browser.provider.BrowserContract.Bookmarks;
+import com.android.browser.provider.BrowserContract.History;
+import com.android.browser.provider.BrowserContract.Images;
 import android.test.suitebuilder.annotation.SmallTest;
 
 import java.io.ByteArrayOutputStream;

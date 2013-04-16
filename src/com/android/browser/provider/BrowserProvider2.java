@@ -39,16 +39,15 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 import android.provider.Browser;
 import android.provider.Browser.BookmarkColumns;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.Accounts;
-import android.provider.BrowserContract.Bookmarks;
-import android.provider.BrowserContract.ChromeSyncColumns;
-import android.provider.BrowserContract.Combined;
-import android.provider.BrowserContract.History;
-import android.provider.BrowserContract.Images;
-import android.provider.BrowserContract.Searches;
-import android.provider.BrowserContract.Settings;
-import android.provider.BrowserContract.SyncState;
+import com.android.browser.provider.BrowserContract.Accounts;
+import com.android.browser.provider.BrowserContract.Bookmarks;
+import com.android.browser.provider.BrowserContract.ChromeSyncColumns;
+import com.android.browser.provider.BrowserContract.Combined;
+import com.android.browser.provider.BrowserContract.History;
+import com.android.browser.provider.BrowserContract.Images;
+import com.android.browser.provider.BrowserContract.Searches;
+import com.android.browser.provider.BrowserContract.Settings;
+import com.android.browser.provider.BrowserContract.SyncState;
 import android.provider.ContactsContract.RawContacts;
 import android.provider.SyncStateContract;
 import android.text.TextUtils;
@@ -57,7 +56,7 @@ import com.android.browser.R;
 import com.android.browser.UrlUtils;
 import com.android.browser.widget.BookmarkThumbnailWidgetProvider;
 import com.android.common.content.SyncStateContentProviderHelper;
-import com.google.common.annotations.VisibleForTesting;
+//import com.google.common.annotations.VisibleForTesting;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -801,7 +800,7 @@ public class BrowserProvider2 extends SQLiteContentProvider {
         return uri.getBooleanQueryParameter(BrowserContract.CALLER_IS_SYNCADAPTER, false);
     }
 
-    @VisibleForTesting
+//    @VisibleForTesting
     public void setWidgetObserver(ContentObserver obs) {
         mWidgetObserver = obs;
     }

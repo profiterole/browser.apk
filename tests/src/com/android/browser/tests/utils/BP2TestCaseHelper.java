@@ -25,9 +25,9 @@ import android.content.ContentValues;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.provider.Browser;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.Bookmarks;
-import android.provider.BrowserContract.History;
+import com.android.provider.BrowserContract;
+import com.android.browser.provider.BrowserContract.Bookmarks;
+import com.android.browser.provider.BrowserContract.History;
 import android.util.Log;
 
 /**

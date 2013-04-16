@@ -24,7 +24,7 @@ import android.app.SearchManager;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
-import android.provider.BrowserContract;
+import com.android.provider.BrowserContract;
 import android.test.suitebuilder.annotation.MediumTest;
 
 import java.util.ArrayList;

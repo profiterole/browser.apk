@@ -16,6 +16,8 @@
 
 package com.android.browser;
 
+import java.io.ByteArrayOutputStream;
+
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -26,15 +28,14 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.preference.PreferenceManager;
-import android.provider.BrowserContract;
-import android.provider.BrowserContract.Combined;
-import android.provider.BrowserContract.Images;
 import android.text.TextUtils;
 import android.util.Log;
 import android.webkit.WebIconDatabase;
 import android.widget.Toast;
 
-import java.io.ByteArrayOutputStream;
+import com.android.browser.provider.BrowserContract;
+import com.android.browser.provider.BrowserContract.Combined;
+import com.android.browser.provider.BrowserContract.Images;
 
 /**
  *  This class is purely to have a common place for adding/deleting bookmarks.

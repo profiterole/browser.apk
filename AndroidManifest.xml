@@ -20,10 +20,10 @@
 
     <original-package android:name="com.android.browser" />
 
-    <permission android:name="com.android.browser.permission.PRELOAD"
+<!--     <permission android:name="com.android.browser.permission.PRELOAD"
         android:label="@string/permission_preload_label"
         android:protectionLevel="signatureOrSystem" />
-
+ -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -46,7 +46,11 @@
     <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
     <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
-
+    
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+    
     <application   android:name="Browser"
                    android:label="@string/application_name"
                    android:icon="@mipmap/ic_launcher_browser"
@@ -54,15 +58,16 @@
                    android:hardwareAccelerated="true"
                    android:taskAffinity="android.task.browser" >
 
-        <provider android:name=".provider.BrowserProvider2"
-                  android:authorities="com.android.browser;browser"
+         <provider android:name=".provider.BrowserProvider2"
+                  android:authorities="com.android.browser2;browser2"
                   android:multiprocess="false"
-                  android:exported="true"
+                  android:exported="false"
                   android:readPermission="com.android.browser.permission.READ_HISTORY_BOOKMARKS"
                   android:writePermission="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS">
             <path-permission android:path="/bookmarks/search_suggest_query"
                     android:readPermission="android.permission.GLOBAL_SEARCH" />
         </provider>
+        
         <activity android:name="BrowserActivity"
                   android:label="@string/application_name"
                   android:launchMode="singleTask"

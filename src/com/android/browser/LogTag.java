@@ -27,8 +27,8 @@ public class LogTag {
      * @param where the location from where the bookmark was added
      */
     public static void logBookmarkAdded(String url, String where) {
-        EventLog.writeEvent(EventLogTags.BROWSER_BOOKMARK_ADDED, url + "|"
-            + where);
+//        EventLog.writeEvent(EventLogTags.BROWSER_BOOKMARK_ADDED, url + "|"
+//            + where);
     }
 
     /**
@@ -42,8 +42,8 @@ public class LogTag {
      * @param duration the time the browser spent loading the page.
      */
     public static void logPageFinishedLoading(String url, long duration) {
-        EventLog.writeEvent(EventLogTags.BROWSER_PAGE_LOADED, url + "|"
-            + duration);
+//        EventLog.writeEvent(EventLogTags.BROWSER_PAGE_LOADED, url + "|"
+//            + duration);
     }
 
     /**
@@ -53,7 +53,7 @@ public class LogTag {
      * @param duration the time spent on the webpage.
      */
     public static void logTimeOnPage(String url, long duration) {
-        EventLog.writeEvent(EventLogTags.BROWSER_TIMEONPAGE, url + "|"
-            + duration);
+//        EventLog.writeEvent(EventLogTags.BROWSER_TIMEONPAGE, url + "|"
+//            + duration);
     }
 }
