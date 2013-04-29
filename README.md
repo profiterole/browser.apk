@@ -8,4 +8,4 @@ Browser.apk from AOSP 4.2.2_r1, see <code>/packages/apps/Browser/</code>
 Download Binary
 ===============
 
-Get [it here](https://raw.github.com/profiterole/browser.apk/master/binaries/Browser.apk)
+Get <strong>[it here](https://github.com/profiterole/browser.apk/raw/master/binaries/BrowserActivity.apk)</strong>
